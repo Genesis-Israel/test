@@ -8,10 +8,14 @@ app.get("/", (req, res) => {
 
 app.get("/t", function(req, res){
     res.json({
-        name: "nask",
-        location: "adkj"
+        "name": "nask",
+        "location": "adkj"
     })
-})
+});
+
+app.get("/", (req, res) => {
+    res.send("Express");
+  });
 
 app.listen(5000, () => {
   console.log("Running on port 5000.");
